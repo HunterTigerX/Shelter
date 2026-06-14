@@ -170,11 +170,11 @@ button {
     margin-bottom: -7px;
 }
 
-.header_unordered_list a:hover {
+.tttt:hover {
     color: var(--var-light-s-color);
 }
 
-.header_unordered_list a:active {
+.tttt:active {
     color: var(--var-light-s-color);
     margin-bottom: 3px;
     border-bottom: 3px solid #F1CDB3;
