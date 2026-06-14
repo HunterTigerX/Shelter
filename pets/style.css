@@ -812,3 +812,7 @@ button {
 .tttt:hover {
   color: var(--var-dark-3xl-color);
 }
+
+.empty {
+  display: none;
+}
