@@ -1,33 +1,50 @@
-// let test2 = document.querySelector('span');
-// let nav_bar = document.querySelectorAll('.tttt')
+let test2 = document.querySelector('span');
+let h1 = document.querySelector("h1");
+let nav_bar = document.querySelectorAll('.tttt')
+let burger = document.getElementById("burger");
+let logo_subtext = document.getElementById("logo_subtext");
+let burger_font = document.querySelector(".burger_font");
+let color_black = document.querySelectorAll('.logo_color_black');
+let gold = document.querySelectorAll('.logo_color_gold');
+let light_s = document.querySelectorAll('.logo_color_light_s');
+let threexl_black = document.querySelectorAll('.logo_color_3xl_black');
+let light_xl = document.querySelectorAll('.logo_color_light_xl');
+let main_block = document.querySelector(".main_block");
+let logo_header = document.querySelector(".logo_header");
+let header_class = document.querySelector(".header");
+let header_burger = document.querySelector(".header_burger");
+let header_nav_block = document.querySelector(".header_nav_block");
+let burger_font_real = document.querySelector(".burger_font_real");
 
-// parent.onmouseover = parent.onmouseout = parent.onmousemove = handler;
 
-// function handler(event) {
-//     if (event.target.classList.contains('test')) {
-//         test2.classList.remove('test');
-//     }
-//     if (event.target.classList.contains('tttt')) {
-//         test2.classList.remove('test');
-//     }
-// }
+let scrollHeight = Math.max(
+    document.body.scrollHeight, document.documentElement.scrollHeight,
+    document.body.offsetHeight, document.documentElement.offsetHeight,
+    document.body.clientHeight, document.documentElement.clientHeight
+);
+console.log(scrollHeight)
 
 
 
 
 
 
-console.log("Self-assessment for pets page:\n" +
-"✅ Markup validation (10 points):\n" +
-"  - Valid HTML, no errors/warnings from validator.w3.org (+5)\n" +
-"  - Logo from text elements, exactly one <h1>, favicon added (+5)\n\n" +
-"✅ Layout matches design - 15 points total:\n" +
-"  - <header> block matches design (+5)\n" +
-"  - Our Friends block matches design (+5)\n" +
-"  - <footer> block matches design (+5)\n\n" +
-"✅ CSS requirements (5 points):\n" +
-"  - Layout centered when >1280px, background colors stretch full width (+5)\n\n" +
-"✅ Interactivity (10 points):\n" +
-"  - Navigation: Our pets highlighted/non-interactive, others interactive, pagination buttons correct enabled/disabled state, smooth anchor scrolling, links work per specs (+5)\n" +
-"  - Pet cards: interactive on hover, buttons have hover/active styles, smooth transitions (+5)\n\n" +
-"TOTAL: 40/40 points for Pets page");
+const links = document.querySelectorAll('.tttt');
+
+
+function burgerFunction() {
+    if (header_burger.classList.contains("off")) {
+        header_burger.classList.remove("off");
+        header_burger.classList.add("on");
+        header_burger.style.transform = "rotate(-90deg)";
+
+
+    }
+
+    else if (header_burger.classList.contains("on")) {
+        header_burger.classList.remove("on");
+        header_burger.classList.add("off");
+        header_burger.style.transform = "none";
+    }
+}
+
