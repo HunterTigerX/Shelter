@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=320, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/georgia" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/arial" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <title>Shelter</title>
+</head>
+
+<body>
+
+    <div class="main_block">
+        <div class="burger_font_real"></div>
+        <div class="burger_font">
+            <nav class="logo_nav_burger">
+                <ul>
+                    <li><a href="../" class="tttt">About the shelter</a></li>
+                    <li><a href="#" class="test"><span>Our pets</span></a></li>
+                    <li><a href="#help_block_link" class="tttt">Help the shelter</a></li>
+                    <li><a href="#footer" class="tttt">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+        <header class="header">
+            <div class="header_nav_block">
+                <a href="#">
+                    <div class="logo_header">
+
+                        <h1 class="logo_color_black">Cozy House</h1>
+                        <p id="logo_subtext" class="logo_subtitle logo_subtitle_place logo_color_3xl_black">Shelter
+                            for pets in Boston</p>
+                    </div>
+                </a>
+                <div class="header_burger off" id="burger" onclick="burgerFunction()"></div>
+                <nav class="logo_nav_bar">
+
+                    <ul class="logo_nav_bar_ul logo_color_black">
+                        <li><a href="../" class="tttt">About the shelter</a></li>
+                        <li><a href="#" class="test"><span class="test">Our pets</span></a></li>
+                        <li><a href="../#help_block_link" class="tttt">Help the shelter</a></li>
+                        <li><a href="#footer" class="tttt">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="block_pets_wrapper">
+                <div class="block_pets">
+                    <h2 class="w3_fix">empty</h2>
+                    <h3 class="h3 pets_heading_position">Our friends who<br> are looking for a house</h3>
+                    <div class="slider">
+                        <div class="cards_container">
+                            <div class="card card_one">
+                                <div class="picture katrine"></div>
+                                <p class="pets_name">katrine</p>
+                                <button class="learn_more"><span class="button_text">Learn more</span></button>
+                            </div>
+                            <div class="card card_two">
+                                <div class="picture jennifer"></div>
+                                <p class="pets_name">jennifer</p>
+                                <button class="learn_more"><span class="button_text">Learn more</span></button>
+                            </div>
+                            <div class="card card_three">
+                                <div class="picture woody"></div>
+                                <p class="pets_name">woody</p>
+                                <button class="learn_more"><span class="button_text">Learn more</span></button>
+                            </div>
+                            <div class="card card_four">
+                                <div class="picture sophia"></div>
+                                <p class="pets_name">sophia</p>
+                                <button class="learn_more"><span class="button_text">Learn more</span></button>
+                            </div>
+                            <div class="card card_five">
+                                <div class="picture timmy"></div>
+                                <p class="pets_name">timmy</p>
+                                <button class="learn_more"><span class="button_text">Learn more</span></button>
+                            </div>
+                            <div class="card card_six">
+                                <div class="picture charly"></div>
+                                <p class="pets_name">charly</p>
+                                <button class="learn_more"><span class="button_text">Learn more</span></button>
+                            </div>
+                            <div class="card card_seven">
+                                <div class="picture scarlett"></div>
+                                <p class="pets_name">scarlett</p>
+                                <button class="learn_more"><span class="button_text">Learn more</span></button>
+                            </div>
+                            <div class="card card_eight">
+                                <div class="picture freddie"></div>
+                                <p class="pets_name">freddie</p>
+                                <button class="learn_more"><span class="button_text">Learn more</span></button>
+                            </div>
+                        </div>
+                        <div class="slider_panel">
+                            <button disabled class="slider_button slider_button_left two_arrows_left"></button>
+                            <button disabled class="slider_button slider_button_left arrow_left"></button>
+                            <button class="slider_button slider_button_center">1</button>
+                            <button class="slider_button slider_button_right arrow_right"></button>
+                            <button class="slider_button slider_button_right two_arrows_right"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer id="footer">
+            <div class="footer_wrapper">
+                <div class="footer_content_all">
+                    <div class="footer_content_one">
+                        <h2 class="h3_typo footer_content_one_header h3_mini">For questions and suggestions</h2>
+
+                        <div class="footer_mail">
+                            <div class="mail_svg" onclick="window.open('mailto:email@shelter.com');"></div>
+                            <a href="mailto:email@shelter.com"
+                                class="list_food_text footer_text_mail">email@shelter.com</a>
+                        </div>
+                        <div class="footer_phone">
+                            <div class="phone_svg" onclick="window.open('tel:+136745677554')"></div>
+                            <a href="tel:+136745677554" class="list_food_text footer_text_phone">+13 674 567 75 54</a>
+                        </div>
+                    </div>
+
+                    <div class="footer_content_two">
+                        <h2 class="h3_typo footer_content_two_header h3_mini">We are waiting for your visit</h2>
+
+                        <div class="footer_boston">
+                            <div class="map_svg" onclick="window.open('https://goo.gl/maps/pSPhEHG8wRdgho3t9');"></div>
+                            <a href="https://goo.gl/maps/pSPhEHG8wRdgho3t9" target="_blank"
+                                class="list_food_text footer_text_Boston">1 Central Street, Boston<br> (entrance from
+                                the
+                                store)
+                            </a>
+                        </div>
+
+
+                        <div class="footer_london">
+                            <div class="map_svg" onclick="window.open('https://goo.gl/maps/SZQERQmxJTPsQ2zM6');"></div>
+                            <a href="https://goo.gl/maps/SZQERQmxJTPsQ2zM6" target="_blank"
+                                class="list_food_text footer_text_London">18 South Park, London</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_dog"></div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

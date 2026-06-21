@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Georgia";
+    src: url("../fonts/fonts/georgia/georgia-regular.ttf");
+
+}
+
+@font-face {
+    font-family: "Arial";
+    src: url("../fonts/fonts/arial/arial-black.ttf");
+    src: url("../fonts/fonts/arial/arial-bold-italic.ttf");
+    src: url("../fonts/fonts/arial/arial-bold.ttf");
+    src: url("../fonts/fonts/arial/arial-italic.ttf");
+    src: url("../fonts/fonts/arial/arial-narrow-bold-italic.ttf");
+    src: url("../fonts/fonts/arial/arial-narrow-bold.ttf");
+    src: url("../fonts/fonts/arial/arial-narrow-italic.ttf");
+    src: url("../fonts/fonts/arial/arial-narrow.ttf");
+    src: url("../fonts/fonts/arial/arial-regular.ttf");
+}
+
+:root {
+    --var-gold-color: #F1CDB3;
+    --var-white-color: #FFFFFF;
+    --var-dark-s-color: #CDCDCD;
+    --var-light-primary-color: #FDDCC4;
+    --var-light-s-color: #FAFAFA;
+    --var-light-l-color: #F6F6F6;
+    --var-dark-m-color: #B2B2B2;
+    --var-dark-l-color: #545454;
+    --var-dark-xl-color: #4C4C4C;
+    --var-dark-3xl-color: #292929;
+    --var-size-44: 44px;
+    --var-size-35: 35px;
+    --var-size-32: 32px;
+    --var-size-25: 25px;
+    --var-size-20: 20px;
+    --var-size-15: 15px;
+    --var-size-17: 17px;
+    --var-size-15: 15px;
+    --var-size-13: 13px;
+    --var-size-12: 12px;
+    --var-weight-regular: 400;
+    --var-line-height-160: 160%;
+    --var-line-height-130: 130%;
+    --var-line-height-115: 115%;
+    --var-line-height-110: 110%;
+    --var-line-height-15: 15px;
+    --var-line-height-18: 18px;
+    --var-line-height-22one: 22.1px;
+    --var-line-height-23: 23px;
+    --var-line-height-24: 24px;
+    --var-family-georgia: "Georgia";
+    --var-family-arial: "Arial";
+    --var-letter-spacing-6: 0.06em;
+}
+
+html,
+body,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+html {
+    min-width: 320px;
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+.main_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    min-width: 320px;
+}
+
+.h3_typo {
+    color: var(--var-dark-l-color);
+    font-family: var(--var-family-georgia);
+    font-weight: var(--var-weight-regular);
+    font-size: var(--var-size-35);
+    line-height: var(--var-line-height-130);
+    letter-spacing: var(--var-letter-spacing-6);
+}
+
+.h5_typo {
+    font-family: var(--var-family-georgia);
+    font-weight: var(--var-weight-regular);
+    font-size: var(--var-size-15);
+    line-height: var(--var-line-height-110);
+    letter-spacing: var(--var-letter-spacing-6);
+    color: var(--var-dark-l-color);
+    margin: 20px 0 0 0;
+}
+
+.list_food_text {
+    margin: 30px 0 0 0;
+    width: 100%;
+    height: 23px;
+    font-family: var(--var-family-georgia);
+    font-weight: var(--var-weight-regular);
+    font-size: var(--var-size-20);
+    line-height: var(--var-line-height-115);
+    text-align: center;
+    align-items: center;
+    letter-spacing: var(--var-letter-spacing-6);
+    color: var(--var-dark-l-color);
+    white-space: nowrap;
+}
+
+.block_wrapper {
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.background_wrapper {
+    width: 100vw;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .main_block {
+        width: 100%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .main_block {
+        width: 100%;
+        min-width: 320px;
+    }
+}
