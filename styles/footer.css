@@ -1,0 +1,243 @@
+footer {
+    background-image: url(../assets/images/footer-background.png);
+}
+
+
+
+.footer_content_all {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_content_one {
+    width: 278px;
+    height: 234px;
+    margin: 56px 0 60px 40px;
+}
+
+.footer_content_one_header {
+    color: var(--var-white-color);
+    width: 280px;
+}
+
+.footer_mail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 251px;
+    height: 32px;
+    margin: 37px 0 0 0;
+}
+
+.mail_svg {
+    width: 48px;
+    height: 100%;
+    background-image: url(../assets/icons/icon-email.svg);
+    background-repeat: no-repeat;
+}
+
+.footer_text_mail {
+    height: 23px;
+    margin: 0;
+    padding: auto 0 auto 20px;
+    color: var(--var-gold-color);
+}
+
+.footer_phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 239px;
+    height: 32px;
+    margin: 40px 0 0 0;
+}
+
+.phone_svg {
+    width: 48px;
+    height: 100%;
+    background-image: url(../assets/icons/icon-phone.svg);
+    background-repeat: no-repeat;
+
+}
+
+.footer_text_phone {
+    height: 23px;
+    margin: 0;
+    padding: auto 0 auto 20px;
+    color: var(--var-gold-color);
+}
+
+.footer_content_two {
+    width: 302px;
+    height: 234px;
+    margin: 56px 0 60px 159px;
+}
+
+.footer_content_two_header {
+    color: var(--var-white-color);
+}
+
+.footer_boston {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 32px 0 0 0;
+}
+
+.map_svg {
+    width: 22px;
+    height: 32px;
+    background-image: url(../assets/icons/icon-marker.svg);
+    background-repeat: no-repeat;
+    margin: auto 20px auto 0;
+    cursor: pointer;
+}
+
+.footer_text_Boston {
+    display: flex;
+    height: auto;
+    width: auto;
+    margin: auto 0;
+    padding: 0;
+    color: var(--var-gold-color);
+    text-align: left;
+    justify-content: left;
+}
+
+.footer_london {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    margin: 34px 0 0 0;
+    padding: 0;
+}
+
+.footer_text_London {
+    display: flex;
+    width: auto;
+    margin: auto auto auto 0;
+    padding: 0;
+    color: var(--var-gold-color);
+    text-align: left;
+    justify-content: left;
+}
+
+.footer_dog {
+    width: 300px;
+    height: 310px;
+    margin: 40px 40px 0 160px;
+    background-image: url(../assets/images/footer-puppy.png);
+}
+
+.footer_text_Boston,
+.footer_text_London,
+.footer_text_phone,
+.footer_text_mail {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 106%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    flex-wrap: nowrap;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+
+    .footer_wrapper {
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .footer_content_all {
+        width: calc(100% - 60px);
+        height: auto;
+        margin: 30px auto 0
+    }
+
+    .footer_content_one {
+        margin: auto 30px auto auto;
+    }
+
+    .footer_content_two {
+        margin: auto auto auto 30px;
+    }
+
+    .donation_content {
+        flex-direction: column-reverse;
+        width: 65.75520833%;
+        margin: 80px auto 100px auto;
+    }
+
+    .donation_content_block {
+        margin: 0 auto;
+    }
+
+    .footer_dog {
+        margin: 65px auto 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .footer_wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer_content_all {
+        flex-direction: column;
+    }
+
+    .footer_content_two_header,
+    .footer_content_one {
+        text-align: center;
+    }
+
+    .footer_mail,
+    .footer_phone,
+    .footer_boston,
+    .footer_london {
+        margin: 40px auto 0 0;
+    }
+
+    .footer_content_one {
+        margin: 30px auto 0;
+    }
+
+    .footer_content_two {
+        margin: 13px auto 0;
+    }
+
+    .footer_dog {
+        margin: 30px auto 0;
+        width: 81.25vw;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 84.0625vw;
+    }
+
+    .h3_mini {
+        font-size: var(--var-size-25);
+    }
+
+    .footer_content_two_header {
+        width: 270px;
+        margin: 0 auto;
+    }
+
+    .footer_text_phone {
+        width: auto;
+    }
+
+    .footer_phone {
+        margin: 41px auto 0 20px;
+    }
+
+    .footer_mail {
+        margin: 39px auto 0 14px;
+    }
+
+}
