@@ -1,0 +1,164 @@
+:root {
+    --gold: #F1CDB3;
+    --gold-l: #FDDCC4;
+    --light: #FFFFFF;
+    --light-s: #FAFAFA;
+    --dark-m: #B2B2B2;
+    --dark-s: #CDCDCD;
+    --dark-l: #545454;
+    --dark-xl: #4C4C4C;
+    --dark-3xl: #292929;
+    --light-l: #F6F6F6;
+}
+
+
+.header_wrapper-pets {
+    margin: 30px 40px;
+    max-width: 1200px;
+    display: flex;
+}
+
+.header__block {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header__block-logo {
+    width: 184px;
+    height: 60px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.header__block-logo-rotated {
+    margin: auto 35px auto auto;
+}
+
+.mar_left_4 {
+    margin-left: 4px;
+}
+
+.header__nav {
+    width: 443px;
+    height: 27px;
+    margin: auto 0 auto auto;
+}
+
+.header_burger {
+    display: none;
+    width: 30px;
+    height: 30px;
+    transform: rotate(0deg);
+    transition: transform 350ms ease-in-out;
+    position: relative;
+    margin: 19px 0px auto auto;
+    z-index: 3;
+}
+
+.header_burger-rotated {
+    margin: 15px 48px auto 0;
+}
+
+.header_burger:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #F1CDB3;
+    box-shadow:
+        0 10px 0 0 #F1CDB3,
+        0 20px 0 0 #F1CDB3;
+    z-index: 3;
+}
+
+.header_burger:hover {
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+.header__nav-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pets_header_li:hover {
+    color: #292929;
+    transition: 0.5s linear;
+}
+
+.pets_header_li:has(a:active) {
+    border-bottom: 3px solid #F1CDB3;
+}
+
+.bordered {
+    border-bottom: 3px solid #F1CDB3;
+}
+
+.bordered a {
+    cursor: text;
+}
+
+.pets_header_link:visited {
+    color: var(--dark-l);
+}
+
+.pets_header_link:hover {
+    transition: 0.5s linear;
+}
+
+
+.pets_header_link:hover,
+.pets_header_link:active {
+    color: var(--dark-3xl);
+}
+
+@media only screen and (min-width: 1281px) {
+    .header_wrapper-pets {
+        margin: 30px auto;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+
+    .header_wrapper-pets {
+        margin: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .header_wrapper-pets {
+        width: auto;
+        margin: 30px 20px;
+    }
+
+    .mar_left_4 {
+        letter-spacing: 0.1em;
+    }
+
+
+    .footer_column-header {
+        text-align: center;
+        width: 235px;
+    }
+
+    .header__block-logo {
+        width: auto;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header_burger {
+        display: flex;
+    }
+
+}
