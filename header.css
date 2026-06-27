@@ -1,28 +1,19 @@
-:root {
-    --gold: #F1CDB3;
-    --gold-l: #FDDCC4;
-    --light: #FFFFFF;
-    --light-s: #FAFAFA;
-    --dark-m: #B2B2B2;
-    --dark-s: #CDCDCD;
-    --dark-l: #545454;
-    --dark-xl: #4C4C4C;
-    --dark-3xl: #292929;
-    --light-l: #F6F6F6;
-}
-
-
-.header_wrapper-pets {
-    margin: 30px 40px;
-    max-width: 1200px;
-    display: flex;
+.header_wrapper {
+    width: 100%;
+    max-width: 1280px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header__block {
-    width: 100%;
-    height: 60px;
     display: flex;
     flex-direction: row;
+    width: calc(100% - 80px);
+    height: 60px;
+    margin: 30px auto 0 auto;
 }
 
 .header__block-logo {
@@ -43,12 +34,6 @@
     margin-left: 4px;
 }
 
-.header__nav {
-    width: 443px;
-    height: 27px;
-    margin: auto 0 auto auto;
-}
-
 .header_burger {
     display: none;
     width: 30px;
@@ -61,7 +46,7 @@
 }
 
 .header_burger-rotated {
-    margin: 15px 48px auto 0;
+    margin: 15px 0px auto 0;
 }
 
 .header_burger:before {
@@ -81,18 +66,19 @@
     transition: 0.5s linear;
 }
 
+.header__nav {
+    width: 443px;
+    height: 27px;
+    margin: auto 0 auto auto;
+}
+
 .header__nav-ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.pets_header_li:hover {
-    color: #292929;
-    transition: 0.5s linear;
-}
-
-.pets_header_li:has(a:active) {
+.header_li:has(a:active) {
     border-bottom: 3px solid #F1CDB3;
 }
 
@@ -100,53 +86,33 @@
     border-bottom: 3px solid #F1CDB3;
 }
 
-.bordered a {
-    cursor: text;
+.header_link {
+    color: var(--gray-dark-s);
 }
 
-.pets_header_link:visited {
-    color: var(--dark-l);
-}
-
-.pets_header_link:hover {
+.header_link:hover {
     transition: 0.5s linear;
 }
 
-
-.pets_header_link:hover,
-.pets_header_link:active {
-    color: var(--dark-3xl);
-}
-
-@media only screen and (min-width: 1281px) {
-    .header_wrapper-pets {
-        margin: 30px auto;
-    }
+.header_link:hover,
+.header_link:active {
+    color: var(--light-s);
 }
 
 @media only screen and (max-width: 1279px) {
 
-    .header_wrapper-pets {
-        margin: 30px;
+    .header__block {
+        width: calc(100% - 60px);
+        margin: 30px auto 0 auto;
     }
 
 }
 
 @media only screen and (max-width: 767px) {
 
-    .header_wrapper-pets {
+    .header__block {
         width: auto;
-        margin: 30px 20px;
-    }
-
-    .mar_left_4 {
-        letter-spacing: 0.1em;
-    }
-
-
-    .footer_column-header {
-        text-align: center;
-        width: 235px;
+        margin: 30px 20px 0 20px;
     }
 
     .header__block-logo {

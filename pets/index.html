@@ -5,157 +5,215 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=320, initial-scale=1.0">
-    <link href="http://fonts.cdnfonts.com/css/georgia" rel="stylesheet">
-    <link href="http://fonts.cdnfonts.com/css/arial" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <title>Shelter</title>
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="./pets.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./burgerPets.css">
+    <link rel="stylesheet" href="../popup.css">
+    <link rel="icon" href="../assets/icons/icon-bowls-and-cups.svg">
+
+    <title>Pets</title>
 </head>
 
 <body>
-
-    <div class="main_block">
-        <div class="burger_font_real"></div>
-        <div class="burger_font">
-            <nav class="logo_nav_burger">
-                <ul>
-                    <li><a href="../" class="tttt">About the shelter</a></li>
-                    <li><a href="#" class="test"><span>Our pets</span></a></li>
-                    <li><a href="#help_block_link" class="tttt">Help the shelter</a></li>
-                    <li><a href="#footer" class="tttt">Contacts</a></li>
-                </ul>
-            </nav>
-        </div>
-        <header class="header">
-            <div class="header_nav_block">
-                <a href="#">
-                    <div class="logo_header">
-
-                        <h1 class="logo_color_black">Cozy House</h1>
-                        <p id="logo_subtext" class="logo_subtitle logo_subtitle_place logo_color_3xl_black">Shelter
-                            for pets in Boston</p>
+    <div class="wrapper">
+        <header>
+            <div class="header_wrapper-pets">
+                <div class="header__block">
+                    <div class="header__block-logo">
+                        <h1 class="h1_header dark-l nor_400 fl_cen fs32 georgia lh110 ls006">Cozy House</h1>
+                        <p class="dark-3xl nor_400 fl_cen fs13 lh15p ls01 mar_left_4 arial">Shelter for pets in Boston
+                        </p>
                     </div>
-                </a>
-                <div class="header_burger off" id="burger" onclick="burgerFunction()"></div>
-                <nav class="logo_nav_bar">
-
-                    <ul class="logo_nav_bar_ul logo_color_black">
-                        <li><a href="../" class="tttt">About the shelter</a></li>
-                        <li><a href="#" class="test"><span class="test">Our pets</span></a></li>
-                        <li><a href="../#help_block_link" class="tttt">Help the shelter</a></li>
-                        <li><a href="#footer" class="tttt">Contacts</a></li>
-                    </ul>
-                </nav>
+                    <div class="header_burger"></div>
+                    <nav class="header__nav">
+                        <ul class="header__nav-ul">
+                            <li class="pets_header_li dark-l fs15 lh160 nor_400 arial"><a
+                                    class="dark-l pets_header_link fs15 lh160 nor_400 arial" href="../main/index.html"
+                                    target="_self">About the
+                                    shelter</a></li>
+                            <li class="bordered pets_header_li pets_header_li-special"><a
+                                    class="dark-3xl pets_header_link fs15 lh160 nor_400 arial">Our pets</a></li>
+                            <li class="pets_header_li fs15 lh160 nor_400 arial"><a
+                                    class="dark-l pets_header_link fs15 lh160 nor_400 arial"
+                                    href="../main/index.html#help_section">Help the shelter</a></li>
+                            <li class="pets_header_li fs15 lh160 nor_400 arial"><a
+                                    class="dark-l pets_header_link fs15 lh160 nor_400 arial" href="#footer">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
 
         <main>
-            <div class="block_pets_wrapper">
-                <div class="block_pets">
-                    <h2 class="w3_fix">empty</h2>
-                    <h3 class="h3 pets_heading_position">Our friends who<br> are looking for a house</h3>
-                    <div class="slider">
-                        <div class="cards_container">
-                            <div class="card card_one">
-                                <div class="picture katrine"></div>
-                                <p class="pets_name">katrine</p>
-                                <button class="learn_more"><span class="button_text">Learn more</span></button>
-                            </div>
-                            <div class="card card_two">
-                                <div class="picture jennifer"></div>
-                                <p class="pets_name">jennifer</p>
-                                <button class="learn_more"><span class="button_text">Learn more</span></button>
-                            </div>
-                            <div class="card card_three">
-                                <div class="picture woody"></div>
-                                <p class="pets_name">woody</p>
-                                <button class="learn_more"><span class="button_text">Learn more</span></button>
-                            </div>
-                            <div class="card card_four">
-                                <div class="picture sophia"></div>
-                                <p class="pets_name">sophia</p>
-                                <button class="learn_more"><span class="button_text">Learn more</span></button>
-                            </div>
-                            <div class="card card_five">
-                                <div class="picture timmy"></div>
-                                <p class="pets_name">timmy</p>
-                                <button class="learn_more"><span class="button_text">Learn more</span></button>
-                            </div>
-                            <div class="card card_six">
-                                <div class="picture charly"></div>
-                                <p class="pets_name">charly</p>
-                                <button class="learn_more"><span class="button_text">Learn more</span></button>
-                            </div>
-                            <div class="card card_seven">
-                                <div class="picture scarlett"></div>
-                                <p class="pets_name">scarlett</p>
-                                <button class="learn_more"><span class="button_text">Learn more</span></button>
-                            </div>
-                            <div class="card card_eight">
-                                <div class="picture freddie"></div>
-                                <p class="pets_name">freddie</p>
-                                <button class="learn_more"><span class="button_text">Learn more</span></button>
-                            </div>
-                        </div>
-                        <div class="slider_panel">
-                            <button disabled class="slider_button slider_button_left two_arrows_left"></button>
-                            <button disabled class="slider_button slider_button_left arrow_left"></button>
-                            <button class="slider_button slider_button_center">1</button>
-                            <button class="slider_button slider_button_right arrow_right"></button>
-                            <button class="slider_button slider_button_right two_arrows_right"></button>
-                        </div>
+            <div class="burger__cover none">
+                <div class="burger_menu turn_burger-right">
+                    <div class="buger_header-block">
+                        <nav class="burger__nav">
+                            <ul class="burger__nav-ul">
+                                <li class="burger__li burger_special"><a
+                                        class="burger_link arial nor_400 fs32 lh160 dark-s">About the
+                                        shelter</a>
+                                    <hr class="burger_li-line">
+
+                                </li>
+                                <li class="burger__li"><a class="burger_link arial nor_400 fs32 lh160 dark-s"
+                                        href="../pets/index.html" target="_self">Our pets</a>
+                                    <hr class="burger_li-line">
+                                </li>
+
+                                <li class="burger__li"><a class="burger_link arial nor_400 fs32 lh160 dark-s"
+                                        href="../main/index.html#help_section">Help the shelter</a>
+                                    <hr class="burger_li-line">
+                                </li>
+
+                                <li class="burger__li"><a class="burger_link arial nor_400 fs32 lh160 dark-s"
+                                        href="#footer">Contacts</a>
+                                    <hr class="burger_li-line">
+
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
+            <section class="main">
 
+                <div class="main_wrapper">
+                    <h2 class="main_wrapper-header georgia nor_400 fs35 lh130 fl_cen ta_cen ls006 dark-l">Our friends
+                        who<br>
+                        are looking for a house</h2>
+                    <div class="slider__wrapper-pets">
+                        <div class="pet__card-block">
+
+                        </div>
+                    </div>
+
+                    <div class="slider_controls-block">
+                        <button class="slider__button-style transp br100 left__double-button" disabled><span
+                                class="button_icon-style left__double "></span></button>
+                        <button class="slider__button-style transp br100 left__single-button" disabled><span
+                                class="button_icon-style left__single"></span></button>
+                        <button class="slider__button-style not__button br100"><span
+                                class="georgia nor_400 fs20 lh115 fl_cen ta_cen ls006 dark-3xl">1</span></button>
+                        <button class="slider__button-style transp br100 right__single-button"><span
+                                class="button_icon-style right__single"></span></button>
+                        <button class="slider__button-style transp br100 right__double-button"><span
+                                class="button_icon-style right__double"></span></button>
+                    </div>
+                </div>
+            </section>
         </main>
 
-        <footer id="footer">
+        <footer id="footer" class="footer">
             <div class="footer_wrapper">
-                <div class="footer_content_all">
-                    <div class="footer_content_one">
-                        <h2 class="h3_typo footer_content_one_header h3_mini">For questions and suggestions</h2>
-
-                        <div class="footer_mail">
-                            <div class="mail_svg" onclick="window.open('mailto:email@shelter.com');"></div>
-                            <a href="mailto:email@shelter.com"
-                                class="list_food_text footer_text_mail">email@shelter.com</a>
+                <div class="footer_block">
+                    <div class="footer_column-one">
+                        <div class="footer_column-header georgia nor_400 fs35 lh130 ls006 light center320">For questions
+                            and suggestions
                         </div>
-                        <div class="footer_phone">
-                            <div class="phone_svg" onclick="window.open('tel:+136745677554')"></div>
-                            <a href="tel:+136745677554" class="list_food_text footer_text_phone">+13 674 567 75 54</a>
+                        <div class="footer_text_icons-block email-block">
+                            <div class="email_logo"> </div>
+                            <a href="mailto:mail@example.org"
+                                class="footer_text_icons-link georgia nor_400 fs20 lh115 ls006 gold">email@shelter.com</a>
+                        </div>
+                        <div class="footer_text_icons-block tel-block">
+                            <div class="phone_logo"></div>
+                            <a href="tel:+0123456789"
+                                class="footer_text_icons-link georgia nor_400 fs20 lh115 ls006 gold">+13 674 567 75
+                                54</a>
                         </div>
                     </div>
 
-                    <div class="footer_content_two">
-                        <h2 class="h3_typo footer_content_two_header h3_mini">We are waiting for your visit</h2>
 
-                        <div class="footer_boston">
-                            <div class="map_svg" onclick="window.open('https://goo.gl/maps/pSPhEHG8wRdgho3t9');"></div>
-                            <a href="https://goo.gl/maps/pSPhEHG8wRdgho3t9" target="_blank"
-                                class="list_food_text footer_text_Boston">1 Central Street, Boston<br> (entrance from
-                                the
-                                store)
-                            </a>
+                    <div class="footer_column-two">
+                        <div class="footer_column-header georgia nor_400 fs35 lh130 ls006 light center320">We are
+                            waiting for your visit
+                        </div>
+                        <div class="footer_text_icons-block map_one">
+                            <div class="map_logo"> </div>
+                            <a class="footer_text_icons-link georgia nor_400 fs20 lh115 ls006 gold">1 Central Street,
+                                Boston (entrance from
+                                the store)</a>
+
+                        </div>
+                        <div class="footer_text_icons-block map_two">
+                            <div class="map_logo"></div>
+                            <a class="footer_text_icons-link georgia nor_400 fs20 lh115 ls006 gold">18 South Park,
+                                London </a>
                         </div>
 
+                    </div>
+                    <div class="footer_column-three"></div>
+                </div>
+            </div>
+        </footer>
+        <div class="popup__wrapper">
+            <div class="popup__shadow"></div>
+            <div class="popup__window">
+                <button class="popup__close-button">
+                    <div class="cross"></div>
+                </button>
+                <div class="popup__content">
+                    <div class="popup__picture"></div>
+                    <div class="popup__text-wrapper">
+                        <h3 class="petName">Jennifer</h3>
+                        <div class="petType-block">
+                            <h4 class="petType">Dog</h4>
+                            <h4>&nbsp;-&nbsp;</h4>
+                            <h4 class="petBreed">Labrador</h4>
+                        </div>
 
-                        <div class="footer_london">
-                            <div class="map_svg" onclick="window.open('https://goo.gl/maps/SZQERQmxJTPsQ2zM6');"></div>
-                            <a href="https://goo.gl/maps/SZQERQmxJTPsQ2zM6" target="_blank"
-                                class="list_food_text footer_text_London">18 South Park, London</a>
+                        <h5 class="popup__text-h5 petDescription">Jennifer is a sweet 2 months old Labrador that is
+                            patiently waiting to
+                            find a new
+                            forever home. This girl really enjoys being able to go outside to run and play, but
+                            won't hesitate to play up a storm in the house if she has all of her favorite toys.</h5>
+                        <div class="popup__pets__data-block">
+                            <ul class="popup__ul">
+                                <li class="popup__li">
+                                    <h5 class="h5__bold">Age:&nbsp;</h5>
+                                    <h5 class="popup__age">2 months</h5>
+                                </li>
+                                <li class="popup__li">
+                                    <h5 class="h5__bold">Inoculations:&nbsp;</h5>
+                                    <h5 class="popup__inoculations">none</h5>
+                                </li>
+                                <li class="popup__li">
+                                    <h5 class="h5__bold">Diseases:&nbsp;</h5>
+                                    <h5 class="popup__diseases">none</h5>
+                                </li>
+                                <li class="popup__li">
+                                    <h5 class="h5__bold">Parasites:&nbsp;</h5>
+                                    <h5 class="popup__parasites">none</h5>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="footer_dog"></div>
             </div>
-        </footer>
-    </div>
 
-    <script src="./script.js"></script>
+        </div>
+        <template class="slider__template">
+            <div class="pet__card-style">
+                <div class="pet__block-image"></div>
+                <div class="pet__block-name"><span
+                        class="pet__name georgia nor_400 fs20 lh145 fl_cen ta_cen ls006 dark-l"></span><button
+                        class="br100 pet__block-button transp"><span
+                            class="learnMore georgia nor_400 fs17 lh130 ls006 dark-3xl">Learn
+                            more</span></button>
+                </div>
+            </div>
+        </template>
+    </div>
+    <script src="script_pets.js"></script>
+    <script src="../footer.js"></script>
+    <script src="../pr.js"></script>
+    <script src="./burgerPets.js"></script>
+    <script src="../popup.js" type="module"></script>
+    <script src="./slider.js" type="module"></script>
 </body>
 
 </html>

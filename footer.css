@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     width: 100%;
-    background: url(./assets/images/footer-gradient-background.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+    background: url(../assets/images/footer-gradient-background.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -142,12 +142,18 @@
 
     .footer_column-two {
         align-items: center;
-        height: 222px;
+        height: 220px;
     }
 
     .footer_column-three {
         width: 260px;
         height: 269px;
+    }
+
+    .center320 {
+        font-size: 25px;
+        width: 270px;
+        text-align: center;
     }
 
     .map_one,

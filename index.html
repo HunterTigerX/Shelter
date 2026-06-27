@@ -5,267 +5,371 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=320, initial-scale=1.0">
-    <link href="http://fonts.cdnfonts.com/css/georgia" rel="stylesheet">
-    <link href="http://fonts.cdnfonts.com/css/arial" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/one.css">
-    <link rel="stylesheet" href="./styles/about.css">
-    <link rel="stylesheet" href="./styles/pets.css">
-    <link rel="stylesheet" href="./styles/help.css">
-    <link rel="stylesheet" href="./styles/donation.css">
-    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./burger.css">
+    <link rel="stylesheet" href="../popup.css">
+    <link rel="icon" href="../assets/icons/icon-bowls-and-cups.svg">
+
     <title>Shelter</title>
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
 </head>
 
 <body>
-    <div class="main_block">
-
-        <div class="header_main_background background_wrapper">
-            <div class="one_wrapper block_wrapper">
-
-
-
-                <header>
-                    <div class="header_Block">
-                <a class="header_Logo" href="#">
-                    <h1 class="logo_title">Cozy House</h1>
-                    <p class="logo_subtitle">Shelter for pets in Boston</p>
-                </a>
-
-                        <div class="header_burger on"
-                            onclick="burgerFunction(); setTimeout(burgerFunctionDelayedOn, 1600); setTimeout(burgerFunctionDelayedOff, 100)">
-                        </div>
-                        <nav class="header_nav">
-                            <ul class="header_unordered_list">
-                                <li><a><span class="test">About the shelter</span></a></li>
-                                <li><a href="./pets/"
-                                        class="tttt" >Our pets</a></li>
-                                <li><a href="#help_block_link" class="tttt">Help the shelter</a></li>
-                                <li><a href="#footer" class="tttt">Contacts</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="burger_menu">
-                        <nav class="burger_nav">
-                            <ul>
-                                <li><a><span class="test">About the shelter</span></a></li>
-                                <li><a href="./pets/"
-                                        class="tttt">Our pets</a></li>
-                                <li><a href="#help_block_link" class="tttt">Help the shelter</a></li>
-                                <li><a href="#footer" class="tttt">Contacts</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </header>
-
-
-                <div class="block_One">
-                    <div class="start_screen_content_block">
-                        <h2 class="start_screen_heading h3_mini">Not only people<br>need a house</h2>
-                        <p class="paragraph-l block_one_text_position start_screen_heading_position">We offer to give a
-                            chance to a little and nice puppy
-                            with an extremely wide
-                            and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-                        <button class="start_screen_button" onclick="location.href='#our_friends'">
-                            <span class="start_screen_button_text">Make a friend</span>
-                        </button>
-                    </div>
-                    <div class="start_screen_puppy"></div>
+    <div class="wrapper">
+        <header>
+            <div class="header_wrapper">
+                <div class="header__block">
+                    <a href="javascript:void(0);" class="header__block-logo">
+                        <p class="gold nor_400 fl_cen fs32 georgia lh110 ls006">Cozy House</p>
+                        <p class="mar_left_4 light nor_400 fl_cen fs13 lh15p ls01 arial">Shelter for pets in Boston</p>
+                    </a>
+                    <div class="header_burger"></div>
+                    <nav class="header__nav">
+                        <ul class="header__nav-ul">
+                            <li class="header_li bordered fs15 lh160 light-s nor_400 arial">About the shelter</li>
+                            <li class="header_li dark-s"><a class="header_link fs15 lh160 nor_400 arial"
+                                    href="../pets/index.html" target="_self">Our pets</a></li>
+                            <li class="header_li dark-s"><a class="header_link fs15 lh160 nor_400 arial"
+                                    href="#help_section">Help the shelter</a></li>
+                            <li class="header_li dark-s"><a class="header_link fs15 lh160 nor_400 arial"
+                                    href="#footer">Contacts</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </div>
+        </header>
 
         <main>
-            <div class="background_wrapper">
-            <div class="block_about">
-                <div class="block_about_content">
-                    <div class="about_pets"></div>
-                    <div class="block_about_content_text">
-                        <h2 class="h3_typo cozy_heading h3_mini">About the shelter<br> “Cozy House”</h2>
-                        <p class="paragraph-l paragraph-l-Dark paragraph_one">Currently we have 121 dogs and 342 cats on
-                            our hands
-                            and statistics show that only 20% of them will find a family. The others will continue
-                            to live with us and will be waiting for a lucky chance to become dearly loved.</p>
-                        <p class="paragraph-l paragraph-l-Dark paragraph_two">We feed our wards with the best food and
-                            make sure
-                            that they do not get sick, feel comfortable (including psychologically) and well. We are
-                            supported by 87 volunteers and 28 employees of various skill levels. About 12% of the
-                            animals are taken by the shelter staff. Taking care of the animals, they become attached
-                            to the pets and would hardly ever leave them alone.</p>
+            <div class="burger__cover none">
+                <div class="burger_menu turn_burger-right">
+                    <div class="buger_header-block">
+                        <nav class="burger__nav">
+                            <ul class="burger__nav-ul">
+                                <li class="burger__li burger_special"><a
+                                        class="burger_link arial nor_400 fs32 lh160 dark-s">About the
+                                        shelter</a>
+                                    <hr class="burger_li-line">
+
+                                </li>
+                                <li class="burger__li"><a class="burger_link arial nor_400 fs32 lh160 dark-s"
+                                        href="../pets/index.html" target="_self">Our pets</a>
+                                    <hr class="burger_li-line">
+                                </li>
+
+                                <li class="burger__li"><a class="burger_link arial nor_400 fs32 lh160 dark-s"
+                                        href="#help_section">Help the shelter</a>
+                                    <hr class="burger_li-line">
+                                </li>
+
+                                <li class="burger__li"><a class="burger_link arial nor_400 fs32 lh160 dark-s"
+                                        href="#footer">Contacts</a>
+                                    <hr class="burger_li-line">
+
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
-</div>
+            <section class="notOnly">
 
-            <div class="block_pets_wrapper background_wrapper">
-            <div class="block_pets block_wrapper">
-                <div class="pets_content">
-                    <h2 id="our_friends" class="h3_typo pets_content_heading h3_mini">
+                <div class="notOnly_wrapper">
+                    <div class="notOnly__content">
+                        <div class="notOnly__content-block">
+                            <h1 class="notOnly__content-header nor_400 georgia fl_cen lh130 light">Not only people need
+                                a
+                                house</h1>
+                            <p class="notOnly__content-p arial nor_400 fs15 lh160 fl_cen dark-s">We offer to give a
+                                chance to a little and
+                                nice puppy with an extremely wide and open heart.
+                                He or she will love you more than anybody else in the world, you will see!</p>
+                            <button class="button_header gold-bg br100"><span
+                                    class="button_header-text georgia nor_400 lh130 ls006">Make a
+                                    friend</span></button>
+                        </div>
+                        <div class="notOnly-dog-block">
+                            <div class="notOnly-dog">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="about_wrapper">
+                    <div class="about_left-block">
+                        <div class="about_img"></div>
+                    </div>
+                    <div class="about_right-block">
+                        <div class="about_right-block_text">
+                            <h2 class="about_header georgia nor_400 lh130 fl_cen ls006 dark-l dark-l">
+                                About the shelter “Cozy House”
+                            </h2>
+                            <p class="about_right-p arial nor_400 fs15 lh160 dark-xl">
+                                Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20%
+                                of
+                                them will find a family. The others will continue to live with us and will be waiting
+                                for a
+                                lucky chance to become dearly loved.
+                            </p>
+                            <p class="about_right-p about_right-p2 arial nor_400 fs15 lh160 dark-xl">
+                                We feed our wards with the best food and make sure that they do not get sick, feel
+                                comfortable (including psychologically) and well. We are supported by 87 volunteers and
+                                28
+                                employees of various skill levels. About 12% of the animals are taken by the shelter
+                                staff.
+                                Taking care of the animals, they become attached to the pets and would hardly ever leave
+                                them alone.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="ourFriends" class="ourFriends light-l-bg">
+                <div class="ourFriends-wrapper">
+                    <h2 class="ourFriends-header georgia nor_400 lh130 fl_cen ls006 dark-l ta_cen">
                         Our friends who<br>are looking for a house
                     </h2>
-                    <div class="pets_slider">
-                        <button class="pets_slider_button_arrow_left pets_slider_buttons_version_one"></button>
-                        <div class="pets_slides">
-                            <div class="pets_slider_cards pets_slider_card_One">
-                                <div class="petOne"></div>
-                                <p class="pet_name">Katrine</p>
-                                <button id="buttonOne" class="slider_learn_more"><span
-                                        class="learn_more_button_text">Learn
-                                        more</span></button>
-                            </div>
-                            <div class="pets_slider_cards pets_slider_card_Two">
-                                <div class="petTwo"></div>
-                                <p class="pet_name">Jennifer</p>
-                                <button class="slider_learn_more"><span class="learn_more_button_text">Learn
-                                        more</span></button>
-                            </div>
-                            <div class="pets_slider_cards pets_slider_card_Three">
-                                <div class="petThree"></div>
-                                <p class="pet_name">Woody</p>
-                                <button class="slider_learn_more"><span class="learn_more_button_text">Learn
-                                        more</span></button>
-                            </div>
-                            <div class="pets_slider_buttons_version_two">
-                                <button class="pets_slider_button_arrow_left_two"></button>
-                                <button class="pets_slider_button_arrow_right_two"></button>
-                            </div>
+
+                    <div class="slider">
+                        <div class="slider_button-left">
+                            <button class="slider_scroll-button slider_scroll_left-button br100 transp gold_l">
+                                <span class="arrow_size left_arrow"></span>
+                            </button>
                         </div>
-                        <button class="pets_slider_button_arrow_right pets_slider_buttons_version_one"></button>
+                        <div class="slider_button-right">
+                            <button class="slider_scroll-button slider_scroll_right-button br100 transp gold_l">
+                                <span class="arrow_size right_arrow"></span>
+                            </button>
+                        </div>
+                        <div class="slider_block">
+                            <div class="slider_block-left"></div>
+                            <div class="slider_block-center"></div>
+                            <div class="slider_block-right"></div>
+                        </div>
                     </div>
-                    <button class="pets_slider_button_primary"
-                        onclick="window.open('./pets/')">
-                        <span class="pets_slider_button_primary_text">Get to know the rest</span>
-                    </button>
+                    <button class="gold-bg br100 ourFriends-button"><span
+                            class="learnMore georgia nor_400 fs17 lh130 ls006 dark-3xl">Get to know the
+                            rest</span></button>
                 </div>
-            </div>
-</div>
+            </section>
 
-            <div class="background_wrapper">
-            <div class="block_help" id="help_block_link">
-                <div class="help_content">
-                    <h2 class="h3_typo help_content_heading h3_mini">How you can help<br> our shelter</h2>
-                    <div class="help_content_list">
 
-                        <div class="lf_pet_food help_block_list">
-                            <div class="pet_food_svg help_svg_size"></div>
-                            <p class="list_food_text">Pet food</p>
+            <section id="help_section" class="help">
+                <div class="help_wrapper">
+                    <h2 class="help_wrapper-header georgia nor_400 lh130 fl_cen ta_cen ls006 dark-l">How you can help
+                        our shelter</h2>
+                    <div class="help_list">
+
+                        <div class="list_style">
+                            <div class="petFood-ico help_list_icon-style">
+
+                            </div>
+                            <div class="georgia nor_400 fs20 lh115 fl_cen ta_cen ls006 dark-l list_style-text">Pet
+                                food</div>
                         </div>
+                        <div class="list_style">
+                            <div class="transportation-ico help_list_icon-style">
 
-                        <div class="lf_transportation help_block_list">
-                            <div class="pet_transportation_svg help_svg_size"></div>
-                            <p class="list_food_text">Transportation</p>
+                            </div>
+                            <div class="list_style-text georgia nor_400 fs20 lh115 fl_cen ta_cen ls006 dark-l">
+                                Transportation
+                            </div>
                         </div>
+                        <div class="list_style">
+                            <div class="toys-ico help_list_icon-style">
 
-                        <div class="lf_toys help_block_list">
-                            <div class="pet_toys_svg help_svg_size"></div>
-                            <p class="list_food_text">Toys</p>
+                            </div>
+                            <div class="list_style-text georgia nor_400 fs20 lh115 fl_cen ta_cen ls006 dark-l">Toys
+                            </div>
                         </div>
+                        <div class="list_style list_special--four">
+                            <div class="bowlsAndCups-ico help_list_icon-style">
 
-                        <div class="lf_bowls_and_cups help_block_list">
-                            <div class="pet_bowls_and_cups_svg help_svg_size"></div>
-                            <p class="list_food_text">Bowls and cups</p>
+                            </div>
+                            <div class="list_style-text georgia nor_400 fs20 lh115 fl_cen ta_cen ls006 dark-l">Bowls
+                                and cups
+                            </div>
                         </div>
+                        <div class="list_style">
+                            <div class="shampoo-ico help_list_icon-style">
 
-                        <div class="lf_shampoos help_block_list">
-                            <div class="pet_shampoos_svg help_svg_size"></div>
-                            <p class="list_food_text">Shampoos</p>
+                            </div>
+                            <div class="list_style-text georgia nor_400 fs20 lh115 fl_cen ta_cen ls006 dark-l">
+                                Shampoos</div>
                         </div>
+                        <div class="list_style list_special--six">
+                            <div class="vitamins-ico help_list_icon-style">
 
-                        <div class="lf_vitamins help_block_list">
-                            <div class="pet_vitamins_svg help_svg_size"></div>
-                            <p class="list_food_text">Vitamins</p>
+                            </div>
+                            <div class="list_style-text georgia nor_400 fs20 lh115 fl_cen ta_cen ls006 dark-l">
+                                Vitamins</div>
                         </div>
+                        <div class="list_style list_special--seven">
+                            <div class="medicines-ico help_list_icon-style">
 
-                        <div class="lf_medicines help_block_list">
-                            <div class="pet_medicines_svg help_svg_size"></div>
-                            <p class="list_food_text">Medicines</p>
+                            </div>
+                            <div class="list_style-text georgia nor_400 fs20 lh115 fl_cen ta_cen ls006 dark-l">
+                                Medicines</div>
                         </div>
+                        <div class="list_style list_special--eight">
+                            <div class="collars-ico help_list_icon-style">
 
-                        <div class="lf_collars help_block_list">
-                            <div class="pet_collars_svg help_svg_size"></div>
-                            <p class="list_food_text">Collars / leashes</p>
+                            </div>
+                            <div class="list_style-text georgia nor_400 fs20 lh115 fl_cen ta_cen ls006 dark-l">
+                                Collars / leashes
+                            </div>
                         </div>
+                        <div class="list_style list_special--nine">
+                            <div class="sleeping-ico help_list_icon-style">
 
-                        <div class="lf_sleeping_areas help_block_list">
-                            <div class="pet_sleeping_areas_svg help_svg_size"></div>
-                            <p class="list_food_text">Sleeping areas</p>
+                            </div>
+                            <div class="list_style-text georgia nor_400 fs20 lh115 fl_cen ta_cen ls006 dark-l">
+                                Sleeping areas
+                            </div>
                         </div>
 
                     </div>
-
                 </div>
-            </div>
-</div>
-
-            <div class="background_wrapper">
-            <div class="block_donation block_wrapper">
-                <div class="donation_content">
-                    <div class="donation_dog"></div>
-                    <div class="donation_content_block">
-                        <h2 class="h3_typo donation_heading h3_mini">You can also<br> make a donation</h2>
-                        <p class="h5_typo donation_subheading">Name of the bank / Type of bank account</p>
+            </section>
 
 
-                        <form action="#" method="get">
-                            <button class="credit_card_button">
-                                <img src="./assets/icons/credit-card.svg" class="credit_card_svg" alt="credit card">
-                                <span class="list_food_text credit_card_button_text">8380 2880 8028 8791 7435</span>
+            <section id="inAddition" class="inAddition light-l-bg">
+                <div class="inAddition_wrapper">
+                    <div class="inAddition_dog-block">
+                        <div class="inAddition_dog-img"></div>
+                    </div>
+                    <div class="inAddition_text-block">
+                        <h2 class="inAddition_header_size georgia nor_400 lh130 fl_cen ls006 dark-l">You can also
+                            make a donation</h2>
+                        <p class="georgia nor_400 fs15 lh110 fl_cen ls006 dark-l donation_span-one">Name of the bank /
+                            Type of bank
+                            account</p>
+                        <form action="#" target="_self">
+                            <button class="inAddition-button gold-bg br9">
+                                <span class="card_logo"></span><span
+                                    class="inAddition-card_text georgia nor_400 fs20 lh115 ls006">8380 2880 8028 8791
+                                    7435</span>
                             </button>
                         </form>
-
-                        <p class="legal_information">Legal information and lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent
-                            ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis
-                            in faucibus.</p>
+                        <p class="arial italic fw400 fs12 lh18p fl_cen dark-m donation_span">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                     </div>
                 </div>
-            </div>
+            </section>
+            <div class="popup__wrapper">
+                <div class="popup__shadow"></div>
+                <div class="popup__window">
+                    <button class="popup__close-button">
+                        <div class="cross"></div>
+                    </button>
+                    <div class="popup__content">
+                        <div class="popup__picture"></div>
+                        <div class="popup__text-wrapper">
+                            <h3 class="petName">Jennifer</h3>
+                            <div class="petType-block">
+                                <h4 class="petType">Dog</h4>
+                                <h4>&nbsp;-&nbsp;</h4>
+                                <h4 class="petBreed">Labrador</h4>
+                            </div>
+
+                            <h5 class="popup__text-h5 petDescription">Jennifer is a sweet 2 months old Labrador that is
+                                patiently waiting to
+                                find a new
+                                forever home. This girl really enjoys being able to go outside to run and play, but
+                                won't hesitate to play up a storm in the house if she has all of her favorite toys.</h5>
+                            <div class="popup__pets__data-block">
+                                <ul class="popup__ul">
+                                    <li class="popup__li">
+                                        <h5 class="h5__bold">Age:&nbsp;</h5>
+                                        <h5 class="popup__age">2 months</h5>
+                                    </li>
+                                    <li class="popup__li">
+                                        <h5 class="h5__bold">Inoculations:&nbsp;</h5>
+                                        <h5 class="popup__inoculations">none</h5>
+                                    </li>
+                                    <li class="popup__li">
+                                        <h5 class="h5__bold">Diseases:&nbsp;</h5>
+                                        <h5 class="popup__diseases">none</h5>
+                                    </li>
+                                    <li class="popup__li">
+                                        <h5 class="h5__bold">Parasites:&nbsp;</h5>
+                                        <h5 class="popup__parasites">none</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
+            <template class="pet_card-template">
+                <div class="slides_style light-s-bg">
+                    <div class="slider_pic">
 
+                    </div>
+                    <div class="slider_disc">
+                        <div class="slider_pet-name georgia nor_400 fs20 lh145 fl_cen ls006 dark-l">Katrine
+                        </div>
+                        <button class="slider_pet-button transp br100 gold_l"><span
+                                class="learnMore georgia nor_400 fs17 lh130 ls006 dark-3xl">Learn more</span></button>
+                    </div>
+                </div>
+            </template>
         </main>
-        <footer id="footer" class="background_wrapper">
-            <div class="footer_wrapper block_wrapper">
-            <div class="footer_content_all">
-                <div class="footer_content_one">
-                    <h2 class="h3_typo footer_content_one_header h3_mini">For questions and suggestions</h2>
 
-                    <div class="footer_mail">
-                        <div class="mail_svg" onclick="window.open('mailto:email@shelter.com');"></div>
-                        <a href="mailto:email@shelter.com" class="footer_text_mail">email@shelter.com</a>
+        <footer id="footer" class="footer">
+            <div class="footer_wrapper">
+                <div class="footer_block">
+                    <div class="footer_column-one">
+                        <div class="center320 georgia nor_400 fs35 lh130 ls006 light">For questions and suggestions
+                        </div>
+                        <div class="footer_text_icons-block email-block">
+                            <div class="email_logo"> </div>
+                            <a href="mailto:mail@example.org"
+                                class="footer_text_icons-link georgia nor_400 fs20 lh115 ls006 gold">email@shelter.com</a>
+                        </div>
+                        <div class="footer_text_icons-block tel-block">
+                            <div class="phone_logo"></div>
+                            <a href="tel:+0123456789"
+                                class="footer_text_icons-link georgia nor_400 fs20 lh115 ls006 gold">+13 674 567 75
+                                54</a>
+                        </div>
                     </div>
-                    <div class="footer_phone">
-                        <div class="phone_svg" onclick="window.open('tel:+136745677554')"></div>
-                        <a href="tel:+136745677554" class="footer_text_phone">+13 674 567 75 54</a>
+
+
+                    <div class="footer_column-two">
+                        <div class="georgia nor_400 fs35 lh130 ls006 light center320">We are waiting for your visit
+                        </div>
+                        <div class="footer_text_icons-block map_one">
+                            <div class="map_logo"> </div>
+                            <a class="footer_text_icons-link georgia nor_400 fs20 lh115 ls006 gold">1 Central Street,
+                                Boston (entrance from
+                                the store)</a>
+
+                        </div>
+                        <div class="footer_text_icons-block map_two">
+                            <div class="map_logo"></div>
+                            <a class="footer_text_icons-link georgia nor_400 fs20 lh115 ls006 gold">18 South Park,
+                                London </a>
+                        </div>
+
                     </div>
+                    <div class="footer_column-three"></div>
                 </div>
-
-                <div class="footer_content_two">
-                    <h2 class="h3_typo footer_content_two_header h3_mini">We are waiting for your visit</h2>
-
-                    <div class="footer_boston">
-                        <div class="map_svg" onclick="window.open('https://goo.gl/maps/pSPhEHG8wRdgho3t9');"></div>
-                        <a href="https://goo.gl/maps/pSPhEHG8wRdgho3t9" target="_blank" class="footer_text_Boston">1
-                            Central Street, Boston<br> (entrance from the
-                            store)
-                        </a>
-                    </div>
-
-
-                    <div class="footer_london">
-                        <div class="map_svg" onclick="window.open('https://goo.gl/maps/SZQERQmxJTPsQ2zM6');"></div>
-                        <a href="https://goo.gl/maps/SZQERQmxJTPsQ2zM6" target="_blank" class="footer_text_London">18
-                            South Park, London</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer_dog"></div>
             </div>
         </footer>
     </div>
     <script src="./script.js"></script>
+    <script src="../footer.js"></script>
+    <script src="../pr.js"></script>
+    <script src="./burger.js"></script>
+    <script src="../popup.js" type="module"></script>
+    <script src="./carousel.js" type="module"></script>
 </body>
 
 </html>
