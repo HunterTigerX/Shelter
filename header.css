@@ -1,0 +1,130 @@
+.header_wrapper {
+    width: 100%;
+    max-width: 1280px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__block {
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 80px);
+    height: 60px;
+    margin: 30px auto 0 auto;
+}
+
+.header__block-logo {
+    width: 184px;
+    height: 60px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.header__block-logo-rotated {
+    margin: auto 35px auto auto;
+}
+
+.mar_left_4 {
+    margin-left: 4px;
+}
+
+.header_burger {
+    display: none;
+    width: 30px;
+    height: 30px;
+    transform: rotate(0deg);
+    transition: transform 350ms ease-in-out;
+    position: relative;
+    margin: 19px 0px auto auto;
+    z-index: 3;
+}
+
+.header_burger-rotated {
+    margin: 15px 0px auto 0;
+}
+
+.header_burger:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #F1CDB3;
+    box-shadow:
+        0 10px 0 0 #F1CDB3,
+        0 20px 0 0 #F1CDB3;
+    z-index: 3;
+}
+
+.header_burger:hover {
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+.header__nav {
+    width: 443px;
+    height: 27px;
+    margin: auto 0 auto auto;
+}
+
+.header__nav-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header_li:has(a:active) {
+    border-bottom: 3px solid #F1CDB3;
+}
+
+.bordered {
+    border-bottom: 3px solid #F1CDB3;
+}
+
+.header_link {
+    color: var(--gray-dark-s);
+}
+
+.header_link:hover {
+    transition: 0.5s linear;
+}
+
+.header_link:hover,
+.header_link:active {
+    color: var(--light-s);
+}
+
+@media only screen and (max-width: 1279px) {
+
+    .header__block {
+        width: calc(100% - 60px);
+        margin: 30px auto 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .header__block {
+        width: auto;
+        margin: 30px 20px 0 20px;
+    }
+
+    .header__block-logo {
+        width: auto;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header_burger {
+        display: flex;
+    }
+
+}
