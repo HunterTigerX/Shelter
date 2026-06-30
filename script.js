@@ -1,6 +1,6 @@
 let ourFriendsButton = document.querySelector(".ourFriends-button");
 ourFriendsButton.addEventListener("click", function () {
-  window.open("../pets/index.html", (target = "_self"));
+  window.open("./pets/index.html", (target = "_self"));
 });
 
 let button_header = document.querySelector(".button_header");
