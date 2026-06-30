@@ -1,4 +1,4 @@
-import dogsList from "../pets.json" with { type: "json" };
+import dogsList from "../pets2.json" with { type: "json" };
 
 const rightSingleButton = document.querySelector(".right__single-button");
 const rightDoubleButton = document.querySelector(".right__double-button");
