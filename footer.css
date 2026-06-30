@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     width: 100%;
-    background: url(./assets/images/footer-gradient-background.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+    background: url(./shelter/assets/images/footer-gradient-background.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -49,7 +49,7 @@
 .footer_column-three {
     grid-area: footer_column-three;
     height: 100%;
-    background-image: url(./assets/images/footer-puppy.png);
+    background-image: url(./shelter/assets/images/footer-puppy.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -71,19 +71,19 @@
 }
 
 .email_logo {
-    background-image: url(./assets/icons/icon-email.svg);
+    background-image: url(./shelter/assets/icons/icon-email.svg);
     width: 40px;
     height: 32px;
 }
 
 .phone_logo {
-    background-image: url(./assets/icons/icon-phone.svg);
+    background-image: url(./shelter/assets/icons/icon-phone.svg);
     width: 40px;
     height: 32px;
 }
 
 .map_logo {
-    background-image: url(./assets/icons/icon-marker.svg);
+    background-image: url(./shelter/assets/icons/icon-marker.svg);
     min-width: 22px;
     min-height: 32px;
 }
