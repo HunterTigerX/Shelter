@@ -70,9 +70,8 @@ async function fillSliderWithSlides() {
     const petName = templateCardCopy.querySelector(".pet__name");
     const petImage = templateCardCopy.querySelector(".pet__block-image");
     petName.textContent = dogsList[arrayOfArrays[slideCount - 1][i]].name;
-    petImage.style.background = `url(${
-      dogsList[arrayOfArrays[slideCount - 1][i]].img
-    })`;
+    petImage.style.background = `url(${dogsList[arrayOfArrays[slideCount - 1][i]].img
+      })`;
     document.querySelector(".pet__card-block").append(templateCardCopy);
   }
 }
