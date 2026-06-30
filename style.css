@@ -199,39 +199,39 @@ button {
 }
 
 .transportation-ico {
-    background-image: url(../assets/icons/icon-transportation.svg);
+    background-image: url(./assets/icons/icon-transportation.svg);
 }
 
 .toys-ico {
-    background-image: url(../assets/icons/icon-toys.svg);
+    background-image: url(./assets/icons/icon-toys.svg);
 }
 
 .bowlsAndCups-ico {
-    background-image: url(../assets/icons/icon-bowls-and-cups.svg);
+    background-image: url(./assets/icons/icon-bowls-and-cups.svg);
 }
 
 .shampoo-ico {
-    background-image: url(../assets/icons/icon-shampoos.svg);
+    background-image: url(./assets/icons/icon-shampoos.svg);
 }
 
 .vitamins-ico {
-    background-image: url(../assets/icons/icon-vitamins.svg);
+    background-image: url(./assets/icons/icon-vitamins.svg);
 }
 
 .medicines-ico {
-    background-image: url(../assets/icons/icon-medicines.svg);
+    background-image: url(./assets/icons/icon-medicines.svg);
 }
 
 .collars-ico {
-    background-image: url(../assets/icons/icon-collars-leashes.svg);
+    background-image: url(./assets/icons/icon-collars-leashes.svg);
 }
 
 .sleeping-ico {
-    background-image: url(../assets/icons/icon-sleeping-area.svg);
+    background-image: url(./assets/icons/icon-sleeping-area.svg);
 }
 
 .right_arrow {
-    background-image: url(../assets/icons/ArrowRight.svg);
+    background-image: url(./assets/icons/ArrowRight.svg);
 }
 
 .transp {
@@ -322,7 +322,7 @@ button:hover {
 .notOnly-dog {
     width: 698px;
     height: 728px;
-    background-image: url(../assets/images/start-screen-puppy-1.png);
+    background-image: url(./assets/images/start-screen-puppy-1.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -350,7 +350,7 @@ button:hover {
 .about_img {
     width: 300px;
     height: 408px;
-    background-image: url(../assets/images/about-pets-1.png);
+    background-image: url(./assets/images/about-pets-1.png);
     background-size: contain;
     background-repeat: no-repeat;
     margin: auto 119px 0 auto;
@@ -423,7 +423,7 @@ button:hover {
 }
 
 .left_arrow {
-    background-image: url(../assets/icons/ArrowLeft.svg);
+    background-image: url(./assets/icons/ArrowLeft.svg);
 }
 
 
@@ -494,15 +494,15 @@ button:hover {
 }
 
 .slide_one {
-    background-image: url(../assets/images/pets-katrine-1.png);
+    background-image: url(./assets/images/pets-katrine-1.png);
 }
 
 .slide_two {
-    background-image: url(../assets/images/pets-jennifer-1.png);
+    background-image: url(./assets/images/pets-jennifer-1.png);
 }
 
 .slide_three {
-    background-image: url(../assets/images/pets-woody-1.png);
+    background-image: url(./assets/images/pets-woody-1.png);
 }
 
 .slider_pic {
@@ -570,7 +570,7 @@ button:hover {
 }
 
 .petFood-ico {
-    background-image: url(../assets/icons/icon-pet-food.svg);
+    background-image: url(./assets/icons/icon-pet-food.svg);
 }
 
 .help_list_icon-style {
@@ -627,7 +627,7 @@ button:hover {
 .inAddition_dog-img {
     width: 505px;
     height: 261px;
-    background-image: url(../assets/images/donation-dog.png);
+    background-image: url(./assets/images/donation-dog.png);
     margin: auto 30px auto 0;
     background-size: contain;
     background-repeat: no-repeat;
@@ -657,7 +657,7 @@ button:hover {
 .card_logo {
     width: 30px;
     height: 23px;
-    background-image: url(../assets/icons/credit-card.svg);
+    background-image: url(./assets/icons/credit-card.svg);
 }
 
 .inAddition-card_text {
