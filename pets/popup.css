@@ -1,0 +1,236 @@
+.popup__wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    display: none;
+}
+
+.popup__shadow {
+    background: rgba(41, 41, 41, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.popup__window {
+    width: 952px;
+    height: 552px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(50% - 305px);
+    left: calc(50% - 450px);
+}
+
+.popup__content {
+    width: 900px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    margin: 0 auto 0 0;
+    background-color: #ffffff;
+    border-radius: 9px;
+}
+
+.popup__close-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    margin: 0 10px auto auto;
+    background-color: transparent;
+}
+
+.cross {
+    width: 12px;
+    height: 12px;
+    background-image: url(../assets/icons/cross.svg);
+    background-size: contain;
+}
+
+.popup__picture {
+    width: 500px;
+    height: 500px;
+    border-radius: 9px 0px 0px 9px;
+    background-image: url(../assets/images/jennifer.png);
+    background-size: contain;
+}
+
+.popup__text-wrapper {
+    width: 351px;
+    height: 362px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto auto 29px;
+}
+
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #000000;
+}
+
+h4 {
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #000000;
+}
+
+.petType-block {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+h5 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    color: #000000;
+}
+
+.h5__bold {
+    font-weight: 700;
+}
+
+.popup__text-h5 {
+    margin: 40px 0;
+}
+
+
+.popup__ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.popup__li {
+    display: flex;
+    flex-direction: row;
+}
+
+.popup__li::before {
+    content: "\2022";
+    color: #F1CDB3;
+    display: inline-block;
+    min-width: 15px;
+}
+
+@media (max-width: 1279px) {
+
+    h5 {
+        font-size: 13px;
+        line-height: 110%;
+    }
+
+    .popup__window {
+        width: 682px;
+        height: 402px;
+        top: calc(50% - 230px);
+        left: calc(50% - 315px);
+    }
+
+    .popup__content {
+        width: 630px;
+        height: 350px;
+    }
+
+    .popup__picture {
+        width: 350px;
+        height: 350px;
+    }
+
+    .popup__text-wrapper {
+        width: 260px;
+        height: 303px;
+        margin: 10px auto auto 11px;
+    }
+
+    .popup__text-h5 {
+        margin: 20px 0;
+    }
+
+    .petBreed {
+        white-space: nowrap;
+    }
+
+    .popup__ul {
+        gap: 5px 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    h5 {
+        text-align: justify;
+    }
+
+    .popup__window {
+        width: 270px;
+        top: calc(50% - 195px);
+        left: calc(50% - 120px);
+    }
+
+    .popup__window,
+    .popup__content,
+    .popup__text-wrapper {
+        height: auto;
+    }
+
+    .popup__close-button {
+        margin-right: 0;
+    }
+
+    .popup__content {
+        width: 240px;
+    }
+
+    .popup__picture {
+        display: none;
+    }
+
+    .popup__text-wrapper {
+        width: 220px;
+        margin: 10px;
+    }
+
+    .popup__text-h5 {
+        margin: 20px 0 24px 0;
+    }
+
+    .popup__ul {
+        width: 220px;
+    }
+
+    .popup__li {
+        width: 100%;
+    }
+
+    .h5__bold + h5 {
+        text-align: left;
+    }
+}
