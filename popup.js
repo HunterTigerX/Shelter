@@ -1,4 +1,4 @@
-import dogsList from "./shelter/pets.json" with { type: "json" };
+import dogsList from "./pets.json" with { type: "json" };
 
 const popupWrapper = document.querySelector(".popup__wrapper");
 const petPicture = document.querySelector(".popup__picture");

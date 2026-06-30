@@ -1,4 +1,4 @@
-import dogsList from "./shelter/pets.json" with { type: "json" };
+import dogsList from "./pets.json" with { type: "json" };
 
 const slideTemplate = document.querySelector(".pet_card-template");
 const sliderBlock = document.querySelector(".slider_block");
